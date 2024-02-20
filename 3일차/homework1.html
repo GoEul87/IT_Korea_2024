@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      width: 1000px;
+      height: 400px;
+      margin: 120px auto;
+      padding: 10px 20px 20px 20px;
+      background-color: #ececec;
+      display: flex;
+    }
+    .card {
+      width: 320px;
+      color: #fff;
+      padding: 10px;
+    }
+    .card:nth-child(1) {
+      background-color: blue;
+    }
+    .card:nth-child(2) {
+      background-color: rgb(255, 0, 106);
+    }
+    .card:nth-child(3) {
+      background-color: rgb(0, 255, 242);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h4>div.card</h4>
+      </div>
+      <div class="card">
+        <h4>div.card</h4>
+      </div>
+      <div class="card">
+        <h4>div.card</h4>
+      </div>
+    </div>
+  </body>
+</html>

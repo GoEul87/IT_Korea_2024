@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+      }
+
+      .container{
+          /* 20px은 상하를 의미하고, auto는 좌우를 의미함 */
+          margin: 20px; auto;
+          width: 500px;
+          height: 800px;
+          background-color: #ececec;
+          /* padding 20px은 상하좌우로 padding을 주겠다는 의미 */
+          padding: 20px;
+      }
+      .content01{
+          width: 450px;
+          height: 250px;
+          background-color: darkgreen;
+          border: 10px solid black;
+          margin-bottom: 250px;
+      }
+
+      .content02{
+          width: 450px;
+          height: 250px;
+          background-color: darkgreen;
+          border: 10px solid black;
+      }
+    </style>
+  </head>
+  <!-- padding&margin 복습 -->
+  <!-- margin은 좌우 간격을 auto로 맞출 수 있음. padding은 불가능
+        auto를 하게되면 화면 중앙으로 배치할 수 있음 -->
+
+  <!-- margin : 1px // 상하좌우
+     margin : 1px 2px; // 상하 - 좌우
+     margin : 1px 2px 3px; // 상 - 좌우 -하 
+     margin : 1px 2px 3px 4px; // 상-하-좌-우
+    
+     padding : 1px // 상하좌우 패딩
+     padding : 1px 2px; // 상하 - 좌우 패딩
+     padding : 1px 2px 3px; // 상 - 좌우 -하 
+     padding : 1px 2px 3px 4px; // 상-하-좌-우
+        
+-->
+  <body>
+    <div class="container">
+      <h6>div.container</h6>
+      <div class="content01">
+        <h6>div.content01</h6>
+      </div>
+      <div class="content02">
+        <h6>div.content02</h6>
+      </div>
+    </div>
+  </body>
+</html>
