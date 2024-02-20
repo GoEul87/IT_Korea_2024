@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* 
+            기본적으로 브라우저가 영역을 일부 차지하고 있기때문에
+            아래 작업을 해야한다
+             */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        
+        }
+        div{
+            /* px(픽셀)은 화면의 가장 작은 단위를 의미 */
+            width: 150px;
+            height: 150px;
+            background-color: antiquewhite;
+            border: 1px solid black;
+        }
+        /* box01이라는 이름을 가진 클래스에 style을 적용 */
+        .box01{
+            background-color: aqua;
+            margin-bottom: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 10px;
+        }
+        .box02{
+            background-color: blueviolet;
+            color: white;
+            margin-bottom: 50px;
+            display: inline-block;
+        }
+        .box03{
+            background-color: blue;
+            color: white;
+            margin-left: 100px;
+            display: inline-block;
+        }
+        /* box를 분리하는 방법은 여러가지가 있는데, 그중 대표적으로 margin을 사용한다 */
+
+        /* margin은 경계선(바깥쪽) 여백을 의미
+        
+        box안에 여백을 주는 방법은 여러개가 있는데, 그 중 대표적으로
+        padding이라는 것을 사용한다.
+
+        padding은 안쪽 여백을 의미
+
+        ***** margin, padding만 마스터해도 사이트제작 80%는 끝 HTML
+        */
+
+    </style>
+</head>
+<body>
+    <!-- 
+        div 태그, 실무에서 100000000000000000%사용, div를 모르면 사이트를 제작할 수 없음.
+        div는 division(나누다)의 줄임말, 블럭->블럭들이 모여서 사이트가 완성됨.
+
+        div는 대표적인 block 태그 중 하나다
+        block 태그란 줄바꿈이 들어가는 특징이 있다.(세로로 배치됨)
+        block 태그 종류 : div, p, h1~h6 태그가 있다.
+
+        줄바꿈 없이 한 줄에 나열되는 태그를 inline태그라고 한다.(가로로 배치됨, 실무에선 x)
+        대표적으로 span, a태그가 inline 태그다.
+
+      -->
+      <!-- 클래스는 변수명이라고 생각하자 -->
+      <div class="box01">박스 1번
+        <!-- h2는 div안에 있다(x)
+            h2는 div bo01의 자식태그 -->
+        <h2>안녕하세요</h2>
+      </div>
+      <div class="box02">박스 2번
+        <h2>안녕하세요</h2>
+      </div>
+      <div class="box03">박스 3번
+        <h2>안녕하세요</h2>
+      </div>
+
+</body>
+</html>
